@@ -1,0 +1,8 @@
+#!/bin/bash
+read n
+fact=1
+for((a=1;a<=n;a++))
+do
+ fact=$((fact * a))
+done
+echo $fact

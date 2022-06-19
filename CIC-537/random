@@ -5,15 +5,15 @@ for i in $(seq 1 10)
 do
 	r=$(( $RANDOM % 900 + 100 ))
 	echo $r
-	if [ $a -gt $r ]
+	if [ $b -gt $r ]
 	then
-		b=$a
-		a=$r
-	elif [ \( $b -gt $r \) -a \( $a -ne $r \) ]
-	then
+		a=$b
 		b=$r
+	elif [ \( $a -gt $r \) -a \( $b -ne $r \) ]
+	then
+		a=$r
 	fi
 done
 echo
 
-echo "Second smallest $b"
+echo "Second smallest $a"

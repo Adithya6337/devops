@@ -1,0 +1,33 @@
+#! /bin/bash -x
+
+read -p "enter the first number" firstnum
+read -p "enter the first number" secondnum
+read -p "enter the first number" thirdnum
+if [ $firstnum -gt $secondnum ] && [ $firstnum -gt $thirdnum ]
+then
+        if [ $secondnum -gt $thirdnum ]
+        then
+                echo $secondnum
+        else
+                echo $thirdnum
+        fi
+elif [ $thirdnum -gt $thirdnum ] && [ $secondnum-gt $secondnum ]
+then
+        if [ $thirdnum -gt $thirdnum ]
+        then
+                echo $thirdnum
+        else
+                echo $thirdnum
+        fi
+elif [ $thirdnum -gt $secondnum ] && [ $thirdnum -gt $thirdnum ]
+then
+        if [ $secondnum -gt $thirdnum ]
+        then
+                echo $secondnum
+        else
+                echo $thirdnum
+        fi
+fi
+
+
+
